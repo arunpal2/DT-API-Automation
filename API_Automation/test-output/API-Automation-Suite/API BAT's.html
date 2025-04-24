@@ -1,0 +1,671 @@
+<html>
+<head>
+<title>TestNG:  API BAT's</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API BAT's</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>64/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 23 10:25:46 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>273 seconds (273202 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Price_APIs.POST_Price_Landing_page_new_Report_API.Test_POST_Price_Landing_page_new_Report_API()'><b>Test_POST_Price_Landing_page_new_Report_API</b><br>Test class: Price_APIs.POST_Price_Landing_page_new_Report_API</td>
+<td><div><pre>java.lang.AssertionError: expected [HTTP/1.1 200 200] but found [HTTP/1.1 500 500]
+	at Price_APIs.POST_Price_Landing_page_new_Report_API.Test_POST_Price_Landing_page_new_Report_API(POST_Price_Landing_page_new_Report_API.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850282761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850282761'><pre>java.lang.AssertionError: expected [HTTP/1.1 200 200] but found [HTTP/1.1 500 500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Price_APIs.POST_Price_Landing_page_new_Report_API.Test_POST_Price_Landing_page_new_Report_API(POST_Price_Landing_page_new_Report_API.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Landing_page_new_Report_API@3646a422</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_edit_rules_save_API.Test_POST_Price_New_Scenario_edit_rules_save_API()'><b>Test_POST_Price_New_Scenario_edit_rules_save_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_edit_rules_save_API</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [500]
+	at Price_APIs.POST_Price_New_Scenario_edit_rules_save_API.Test_POST_Price_New_Scenario_edit_rules_save_API(POST_Price_New_Scenario_edit_rules_save_API.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1426077488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426077488'><pre>java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at Price_APIs.POST_Price_New_Scenario_edit_rules_save_API.Test_POST_Price_New_Scenario_edit_rules_save_API(POST_Price_New_Scenario_edit_rules_save_API.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_New_Scenario_edit_rules_save_API@2a7f1f10</td></tr>
+<tr>
+<td title='Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API.Test_POST_Landing_Page_Context_Menu_Price_update_API()'><b>Test_POST_Landing_Page_Context_Menu_Price_update_API</b><br>Test class: Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [500]
+	at Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API.Test_POST_Landing_Page_Context_Menu_Price_update_API(POST_Landing_Page_Context_Menu_Price_update_API.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1407146717", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1407146717'><pre>java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API.Test_POST_Landing_Page_Context_Menu_Price_update_API(POST_Landing_Page_Context_Menu_Price_update_API.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API@368247b9</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API.Test_POST_Price_Detailed_Scenario_POST_URL_API()'><b>Test_POST_Price_Detailed_Scenario_POST_URL_API</b><br>Test class: Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [500]
+	at Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API.Test_POST_Price_Detailed_Scenario_POST_URL_API(POST_Price_Scenario_Summary_Actions_Recalculate_API.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1326182797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1326182797'><pre>java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API.Test_POST_Price_Detailed_Scenario_POST_URL_API(POST_Price_Scenario_Summary_Actions_Recalculate_API.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API@740cae06</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Custom_Report_Creation_API.Test_POST_Price_Custom_Report_Creation_API()'><b>Test_POST_Price_Custom_Report_Creation_API</b><br>Test class: Price_APIs.POST_Price_Custom_Report_Creation_API</td>
+<td><div><pre>java.lang.AssertionError: expected [HTTP/1.1 200 200] but found [HTTP/1.1 500 500]
+	at Price_APIs.POST_Price_Custom_Report_Creation_API.Test_POST_Price_Custom_Report_Creation_API(POST_Price_Custom_Report_Creation_API.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1534492942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1534492942'><pre>java.lang.AssertionError: expected [HTTP/1.1 200 200] but found [HTTP/1.1 500 500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Price_APIs.POST_Price_Custom_Report_Creation_API.Test_POST_Price_Custom_Report_Creation_API(POST_Price_Custom_Report_Creation_API.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Custom_Report_Creation_API@1a942c18</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_Edit_Rules_API.Test_POST_Price_New_Scenario_Edit_Rules_API()'><b>Test_POST_Price_New_Scenario_Edit_Rules_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_Edit_Rules_API</td>
+<td><div><pre>java.lang.AssertionError: expected [HTTP/1.1 200 200] but found [HTTP/1.1 500 500]
+	at Price_APIs.POST_Price_New_Scenario_Edit_Rules_API.Test_POST_Price_New_Scenario_Edit_Rules_API(POST_Price_New_Scenario_Edit_Rules_API.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace316462869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace316462869'><pre>java.lang.AssertionError: expected [HTTP/1.1 200 200] but found [HTTP/1.1 500 500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at Price_APIs.POST_Price_New_Scenario_Edit_Rules_API.Test_POST_Price_New_Scenario_Edit_Rules_API(POST_Price_New_Scenario_Edit_Rules_API.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+</pre></div></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_New_Scenario_Edit_Rules_API@298a5e20</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Price_APIs.Price_Get_advanced_override_price_actions_API.Test_Price_Get_advanced_override_price_actions_API()'><b>Test_Price_Get_advanced_override_price_actions_API</b><br>Test class: Price_APIs.Price_Get_advanced_override_price_actions_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Get_advanced_override_price_actions_API@6e9175d8</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_with_Rules_API.Test_POST_Price_Copy_API()'><b>Test_POST_Price_Copy_API</b><br>Test class: Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_with_Rules_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_with_Rules_API@26d9b808</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Price_Change_Summary_widget_API.Test_Price_get_Price_Change_Summary_widget_API()'><b>Test_Price_get_Price_Change_Summary_widget_API</b><br>Test class: Price_APIs.Price_get_Price_Change_Summary_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_get_Price_Change_Summary_widget_API@2eae8e6e</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Summay_get_log_API.Test_Price_Scenario_Summay_get_log_API()'><b>Test_Price_Scenario_Summay_get_log_API</b><br>Test class: Price_APIs.Price_Scenario_Summay_get_log_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Summay_get_log_API@202b0582</td></tr>
+<tr>
+<td title='Price_APIs.Price_New_Scenario_Run_Rules_API.Test_Price_New_Scenario_Run_Rules_API()'><b>Test_Price_New_Scenario_Run_Rules_API</b><br>Test class: Price_APIs.Price_New_Scenario_Run_Rules_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_New_Scenario_Run_Rules_API@248e319b</td></tr>
+<tr>
+<td title='Price_APIs.Price_Context_Menu_Export_override_prices_dialogue_API.Test_Price_Context_Menu_Export_override_prices_dialogue_API()'><b>Test_Price_Context_Menu_Export_override_prices_dialogue_API</b><br>Test class: Price_APIs.Price_Context_Menu_Export_override_prices_dialogue_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Context_Menu_Export_override_prices_dialogue_API@6892b3b6</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Summay_get_financial_forecast_widget_API.Test_Price_Scenario_Summay_get_financial_forecast_widget_API()'><b>Test_Price_Scenario_Summay_get_financial_forecast_widget_API</b><br>Test class: Price_APIs.Price_Scenario_Summay_get_financial_forecast_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Summay_get_financial_forecast_widget_API@3b0fe47a</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Scenario_Summary_Scenario_Settings_report_API.Test_POST_Save_Comment_API_API()'><b>Test_POST_Save_Comment_API_API</b><br>Test class: Price_APIs.POST_Price_Scenario_Summary_Scenario_Settings_report_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.POST_Price_Scenario_Summary_Scenario_Settings_report_API@7526515b</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Run_Id_API.Test_Price_Scenario_Run_Id_API()'><b>Test_Price_Scenario_Run_Id_API</b><br>Test class: Price_APIs.Price_Scenario_Run_Id_API</td>
+<td></td>
+<td>4</td>
+<td>Price_APIs.Price_Scenario_Run_Id_API@54422e18</td></tr>
+<tr>
+<td title='Price_APIs.Price_New_Scenario_Get_Rules_Type_API.Test_Price_New_Scenario_Get_Rules_Type_API()'><b>Test_Price_New_Scenario_Get_Rules_Type_API</b><br>Test class: Price_APIs.Price_New_Scenario_Get_Rules_Type_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_New_Scenario_Get_Rules_Type_API@76b1e9b8</td></tr>
+<tr>
+<td title='Price_APIs.Price_New_Scenario_Rule_Group_API.Test_Price_New_Scenario_Rule_Group_API()'><b>Test_Price_New_Scenario_Rule_Group_API</b><br>Test class: Price_APIs.Price_New_Scenario_Rule_Group_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_New_Scenario_Rule_Group_API@2af004b</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Landing_page_Context_Menu_Move_Scenario_to_Production_API.Test_POST_Price_Landing_page_Context_Menu_Move_Scenario_to_Production_API()'><b>Test_POST_Price_Landing_page_Context_Menu_Move_Scenario_to_Production_API</b><br>Test class: Price_APIs.POST_Price_Landing_page_Context_Menu_Move_Scenario_to_Production_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Landing_page_Context_Menu_Move_Scenario_to_Production_API@2892d68</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Scenario_Summary_Details_page_Scenario_Result_Export_API.Test_POST_Price_Scenario_Summary_Details_page_Scenario_Result_Export_API()'><b>Test_POST_Price_Scenario_Summary_Details_page_Scenario_Result_Export_API</b><br>Test class: Price_APIs.POST_Price_Scenario_Summary_Details_page_Scenario_Result_Export_API</td>
+<td></td>
+<td>5</td>
+<td>Price_APIs.POST_Price_Scenario_Summary_Details_page_Scenario_Result_Export_API@f78a47e</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Summay_get_action_list_API.Test_Price_Scenario_Summay_get_action_list_API()'><b>Test_Price_Scenario_Summay_get_action_list_API</b><br>Test class: Price_APIs.Price_Scenario_Summay_get_action_list_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Summay_get_action_list_API@7ef82753</td></tr>
+<tr>
+<td title='Price_APIs.Price_Product_compare_Report_API.Test_Price_Product_compare_Report_API()'><b>Test_Price_Product_compare_Report_API</b><br>Test class: Price_APIs.Price_Product_compare_Report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Product_compare_Report_API@5d0bf09b</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_change_division_API.Test_POST_Price_New_Scenario_change_division_API()'><b>Test_POST_Price_New_Scenario_change_division_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_change_division_API</td>
+<td></td>
+<td>3</td>
+<td>Price_APIs.POST_Price_New_Scenario_change_division_API@2e385cce</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Landing_page_Context_Menu_Export_override_Prices_report_API.Test_POST_Price_Landing_page_Context_Menu_Export_override_Prices_report_API()'><b>Test_POST_Price_Landing_page_Context_Menu_Export_override_Prices_report_API</b><br>Test class: Price_APIs.POST_Price_Landing_page_Context_Menu_Export_override_Prices_report_API</td>
+<td></td>
+<td>3</td>
+<td>Price_APIs.POST_Price_Landing_page_Context_Menu_Export_override_Prices_report_API@d86a6f</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Rule_Exception_widget_API.Test_Price_get_Rule_Exception_widget_API()'><b>Test_Price_get_Rule_Exception_widget_API</b><br>Test class: Price_APIs.Price_get_Rule_Exception_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_get_Rule_Exception_widget_API@470734c3</td></tr>
+<tr>
+<td title='Price_APIs.Price_Landing_page_widget_Count_Model_Health_API.Test_Price_Landing_page_widget_Count_Model_Health_API()'><b>Test_Price_Landing_page_widget_Count_Model_Health_API</b><br>Test class: Price_APIs.Price_Landing_page_widget_Count_Model_Health_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Landing_page_widget_Count_Model_Health_API@173ed316</td></tr>
+<tr>
+<td title='Price_APIs.Price_Get_advanced_override_competitors_list_API.Test_Price_Get_advanced_override_competitors_list_API()'><b>Test_Price_Get_advanced_override_competitors_list_API</b><br>Test class: Price_APIs.Price_Get_advanced_override_competitors_list_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Get_advanced_override_competitors_list_API@5b1669c0</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_Copy_Rule_API.Test_POST_Price_New_Scenario_Copy_Rule_API()'><b>Test_POST_Price_New_Scenario_Copy_Rule_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_Copy_Rule_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_New_Scenario_Copy_Rule_API@2ddc9a9f</td></tr>
+<tr>
+<td title='Price_APIs.Price_Landing_pending_delete_report_API.Test_Price_Landing_pending_delete_report_API()'><b>Test_Price_Landing_pending_delete_report_API</b><br>Test class: Price_APIs.Price_Landing_pending_delete_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Landing_pending_delete_report_API@74ea2410</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Approval_History_Secondary_Manage_approvals_API.Test_Price_Scenario_Approval_History_Secondary_Manage_approvals_API()'><b>Test_Price_Scenario_Approval_History_Secondary_Manage_approvals_API</b><br>Test class: Price_APIs.Price_Scenario_Approval_History_Secondary_Manage_approvals_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Approval_History_Secondary_Manage_approvals_API@793f29ff</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Competitor_Position_widget_API.Test_Price_get_Competitor_Position_widget_API()'><b>Test_Price_get_Competitor_Position_widget_API</b><br>Test class: Price_APIs.Price_get_Competitor_Position_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_get_Competitor_Position_widget_API@7d0b7e3c</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Compare_ChartMetrics_URL.Test_Price_Scenario_Compare_ChartMetrics_URL_API()'><b>Test_Price_Scenario_Compare_ChartMetrics_URL_API</b><br>Test class: Price_APIs.Price_Scenario_Compare_ChartMetrics_URL</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Compare_ChartMetrics_URL@3e8c3cb</td></tr>
+<tr>
+<td title='Price_APIs.Price_Landing_page_widget_config_API.Test_Price_Landing_page_widget_config_API()'><b>Test_Price_Landing_page_widget_config_API</b><br>Test class: Price_APIs.Price_Landing_page_widget_config_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Landing_page_widget_config_API@69e153c5</td></tr>
+<tr>
+<td title='Price_APIs.Price_Get_Advanced_override_Modal_Scenario_Results_API.Test_Price_Get_Advanced_override_Modal_Scenario_Results_API()'><b>Test_Price_Get_Advanced_override_Modal_Scenario_Results_API</b><br>Test class: Price_APIs.Price_Get_Advanced_override_Modal_Scenario_Results_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Get_Advanced_override_Modal_Scenario_Results_API@78e4deb0</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Model_Health_widget_API.Test_Price_get_Model_Health_widget_API()'><b>Test_Price_get_Model_Health_widget_API</b><br>Test class: Price_APIs.Price_get_Model_Health_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_get_Model_Health_widget_API@4b741d6d</td></tr>
+<tr>
+<td title='Price_APIs.Price_Duplicate_Scenario_Name_API.Test_Price_is_Duplicate_Scenario_Name_API()'><b>Test_Price_is_Duplicate_Scenario_Name_API</b><br>Test class: Price_APIs.Price_Duplicate_Scenario_Name_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Duplicate_Scenario_Name_API@449a4f23</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Summary_History_report_API.Test_Price_Scenario_Summary_History_report_API()'><b>Test_Price_Scenario_Summary_History_report_API</b><br>Test class: Price_APIs.Price_Scenario_Summary_History_report_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Scenario_Summary_History_report_API@3e27ba32</td></tr>
+<tr>
+<td title='Price_APIs.GET_POST__API.Test_POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API()'><b>Test_POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API</b><br>Test class: Price_APIs.GET_POST__API</td>
+<td></td>
+<td>3</td>
+<td>Price_APIs.GET_POST__API@6340e5f0</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Landing_Page_Context_Menu_Remove_from_production_API.Test_POST_Price_Landing_Page_Context_Menu_Remove_from_production_API()'><b>Test_POST_Price_Landing_Page_Context_Menu_Remove_from_production_API</b><br>Test class: Price_APIs.POST_Price_Landing_Page_Context_Menu_Remove_from_production_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Landing_Page_Context_Menu_Remove_from_production_API@5ab956d7</td></tr>
+<tr>
+<td title='Price_APIs.Price_Landing_page_widget_Filter_extreme_chg_API.Test_Price_Landing_page_widget_Filter_extreme_chg_API()'><b>Test_Price_Landing_page_widget_Filter_extreme_chg_API</b><br>Test class: Price_APIs.Price_Landing_page_widget_Filter_extreme_chg_API</td>
+<td></td>
+<td>5</td>
+<td>Price_APIs.Price_Landing_page_widget_Filter_extreme_chg_API@25ce9dc4</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_Change_Category_API.Test_POST_Price_New_Scenario_Change_Category_API()'><b>Test_POST_Price_New_Scenario_Change_Category_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_Change_Category_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.POST_Price_New_Scenario_Change_Category_API@3e27aa33</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Detailed_Scenario_POST_URL_API.Test_POST_Price_Detailed_Scenario_POST_URL_API()'><b>Test_POST_Price_Detailed_Scenario_POST_URL_API</b><br>Test class: Price_APIs.POST_Price_Detailed_Scenario_POST_URL_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.POST_Price_Detailed_Scenario_POST_URL_API@71ba6d4e</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Product_Analysis_widget_API.Test_Price_get_Product_Analysis_widget_API()'><b>Test_Price_get_Product_Analysis_widget_API</b><br>Test class: Price_APIs.Price_get_Product_Analysis_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_get_Product_Analysis_widget_API@8f2ef19</td></tr>
+<tr>
+<td title='Price_APIs.Price_Action_Compare_scenarios_API.Test_Price_Action_Compare_scenarios_API()'><b>Test_Price_Action_Compare_scenarios_API</b><br>Test class: Price_APIs.Price_Action_Compare_scenarios_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Action_Compare_scenarios_API@6d4d66d2</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Cpi_Changes_widget_API.Test_Price_get_Cpi_Changes_widget_API()'><b>Test_Price_get_Cpi_Changes_widget_API</b><br>Test class: Price_APIs.Price_get_Cpi_Changes_widget_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_get_Cpi_Changes_widget_API@15bb5034</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Settings_API.Test_Price_Scenario_Settings_API()'><b>Test_Price_Scenario_Settings_API</b><br>Test class: Price_APIs.Price_Scenario_Settings_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Settings_API@117159c0</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Duplicate_Scenario_With_results_API.Test_POST_Price_Duplicate_Scenario_With_results_API()'><b>Test_POST_Price_Duplicate_Scenario_With_results_API</b><br>Test class: Price_APIs.POST_Price_Duplicate_Scenario_With_results_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Duplicate_Scenario_With_results_API@63376bed</td></tr>
+<tr>
+<td title='Price_APIs.Price_Edit_scenario_icon_API.Test_Price_Edit_scenario_icon_API()'><b>Test_Price_Edit_scenario_icon_API</b><br>Test class: Price_APIs.Price_Edit_scenario_icon_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Edit_scenario_icon_API@1530c739</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Deactivate_rule_Edit_Scenario_API.Test_POST_Price_Deactivate_rule_Edit_Scenario_API()'><b>Test_POST_Price_Deactivate_rule_Edit_Scenario_API</b><br>Test class: Price_APIs.POST_Price_Deactivate_rule_Edit_Scenario_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Deactivate_rule_Edit_Scenario_API@55a147cc</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_history_API_to_fetch_Run_ID_API.Test_Price_Scenario_history_API_to_fetch_Run_ID_API()'><b>Test_Price_Scenario_history_API_to_fetch_Run_ID_API</b><br>Test class: Price_APIs.Price_Scenario_history_API_to_fetch_Run_ID_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Scenario_history_API_to_fetch_Run_ID_API@543295b0</td></tr>
+<tr>
+<td title='Price_APIs.Price_get_Scenario_API.Test_Price_get_Scenario_API()'><b>Test_Price_get_Scenario_API</b><br>Test class: Price_APIs.Price_get_Scenario_API</td>
+<td></td>
+<td>3</td>
+<td>Price_APIs.Price_get_Scenario_API@2cf3d63b</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Override_with_current_retail_prices_Scenario_Results_API.Test_POST_Price_Override_with_current_retail_prices_Scenario_Results_API()'><b>Test_POST_Price_Override_with_current_retail_prices_Scenario_Results_API</b><br>Test class: Price_APIs.POST_Price_Override_with_current_retail_prices_Scenario_Results_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Override_with_current_retail_prices_Scenario_Results_API@f0c8a99</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Compare_Chart_URL.Test_Price_Scenario_Compare_Chart_URL_API()'><b>Test_Price_Scenario_Compare_Chart_URL_API</b><br>Test class: Price_APIs.Price_Scenario_Compare_Chart_URL</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Compare_Chart_URL@563f38c4</td></tr>
+<tr>
+<td title='Price_APIs.Price_Context_Menu_Approve_for_Export_Dialogue_API.Test_Price_Context_Menu_Approve_for_Export_Dialogue_API()'><b>Test_Price_Context_Menu_Approve_for_Export_Dialogue_API</b><br>Test class: Price_APIs.Price_Context_Menu_Approve_for_Export_Dialogue_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Context_Menu_Approve_for_Export_Dialogue_API@11392934</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_Add_Rule_Group_API.Test_POST_Price_New_Scenario_Add_Rule_Group_API()'><b>Test_POST_Price_New_Scenario_Add_Rule_Group_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_Add_Rule_Group_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_New_Scenario_Add_Rule_Group_API@750e2b97</td></tr>
+<tr>
+<td title='Price_APIs.Price_Details_page_Rules_Exception_report_API.Test_Price_Details_page_Rules_Exception_report_API()'><b>Test_Price_Details_page_Rules_Exception_report_API</b><br>Test class: Price_APIs.Price_Details_page_Rules_Exception_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Details_page_Rules_Exception_report_API@53fe15ff</td></tr>
+<tr>
+<td title='Price_APIs.Price_Details_page_CPI_report_API.Test_Price_Details_page_CPI_report_API()'><b>Test_Price_Details_page_CPI_report_API</b><br>Test class: Price_APIs.Price_Details_page_CPI_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Details_page_CPI_report_API@76a4ebf2</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_New_Scenario_Save_API.Test_POST_Price_New_Scenario_Save_API()'><b>Test_POST_Price_New_Scenario_Save_API</b><br>Test class: Price_APIs.POST_Price_New_Scenario_Save_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_New_Scenario_Save_API@46cdf8bd</td></tr>
+<tr>
+<td title='Price_APIs.POST_Save_Comment_API.Test_POST_Save_Comment_API_API()'><b>Test_POST_Save_Comment_API_API</b><br>Test class: Price_APIs.POST_Save_Comment_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Save_Comment_API@54c5a2ff</td></tr>
+<tr>
+<td title='Price_APIs.Price_CPI_rules_report_API.Test_Price_CPI_rules_report_API()'><b>Test_Price_CPI_rules_report_API</b><br>Test class: Price_APIs.Price_CPI_rules_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_CPI_rules_report_API@6e6f2380</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Landing_page_Context_Menu_Approve_for_Export_Report_API.Test_POST_Price_Landing_page_Context_Menu_Approve_for_Export_Report_API()'><b>Test_POST_Price_Landing_page_Context_Menu_Approve_for_Export_Report_API</b><br>Test class: Price_APIs.POST_Price_Landing_page_Context_Menu_Approve_for_Export_Report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Landing_page_Context_Menu_Approve_for_Export_Report_API@4145bad8</td></tr>
+<tr>
+<td title='Price_APIs.Price_Competitive_rules_report_API.Test_Price_Competitive_rules_report_API()'><b>Test_Price_Competitive_rules_report_API</b><br>Test class: Price_APIs.Price_Competitive_rules_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Competitive_rules_report_API@2a265ea9</td></tr>
+<tr>
+<td title='Price_APIs.Price_Scenario_Summay_get_report_API.Test_Price_Scenario_Summay_get_report_API()'><b>Test_Price_Scenario_Summay_get_report_API</b><br>Test class: Price_APIs.Price_Scenario_Summay_get_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Scenario_Summay_get_report_API@235ecd9f</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Scenario_Summary_History_Export_API.Test_POST_Price_Scenario_Summary_History_Export_API()'><b>Test_POST_Price_Scenario_Summary_History_Export_API</b><br>Test class: Price_APIs.POST_Price_Scenario_Summary_History_Export_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.POST_Price_Scenario_Summary_History_Export_API@644baf4a</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Activate_rule_Edit_Scenario_API.Test_POST_Price_Activate_rule_Edit_Scenario_API()'><b>Test_POST_Price_Activate_rule_Edit_Scenario_API</b><br>Test class: Price_APIs.POST_Price_Activate_rule_Edit_Scenario_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Activate_rule_Edit_Scenario_API@1a6d8329</td></tr>
+<tr>
+<td title='Price_APIs.POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API.Test_POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API()'><b>Test_POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API</b><br>Test class: Price_APIs.POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Landing_page_Context_Menu_Override_with_current_retail_prices_API@1e6a3214</td></tr>
+<tr>
+<td title='Price_APIs.Price_Details_page_DetailedResults_filtered_by_aggregation_API.Test_Price_Details_page_DetailedResults_filtered_by_aggregation_API()'><b>Test_Price_Details_page_DetailedResults_filtered_by_aggregation_API</b><br>Test class: Price_APIs.Price_Details_page_DetailedResults_filtered_by_aggregation_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Details_page_DetailedResults_filtered_by_aggregation_API@2e8c1c9b</td></tr>
+<tr>
+<td title='Price_APIs.Price_Landing_page_widget_broken_API.Test_Price_Landing_page_widget_broken_API()'><b>Test_Price_Landing_page_widget_broken_API</b><br>Test class: Price_APIs.Price_Landing_page_widget_broken_API</td>
+<td></td>
+<td>2</td>
+<td>Price_APIs.Price_Landing_page_widget_broken_API@7674f035</td></tr>
+<tr>
+<td title='Price_APIs.Price_Landing_scenario_report_API.Test_Price_Landing_scenario_report_API()'><b>Test_Price_Landing_scenario_report_API</b><br>Test class: Price_APIs.Price_Landing_scenario_report_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_Landing_scenario_report_API@17f62e33</td></tr>
+<tr>
+<td title='Price_APIs.Price_New_Scenario_New_Rule_API.Test_Price_New_Scenario_New_Rule_API()'><b>Test_Price_New_Scenario_New_Rule_API</b><br>Test class: Price_APIs.Price_New_Scenario_New_Rule_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.Price_New_Scenario_New_Rule_API@27406a17</td></tr>
+<tr>
+<td title='Price_APIs.POST_Price_Update_multiple_override_Scenario_Results_API.Test_POST_Price_Update_multiple_override_Scenario_Results_API()'><b>Test_POST_Price_Update_multiple_override_Scenario_Results_API</b><br>Test class: Price_APIs.POST_Price_Update_multiple_override_Scenario_Results_API</td>
+<td></td>
+<td>1</td>
+<td>Price_APIs.POST_Price_Update_multiple_override_Scenario_Results_API@1ed4ae0f</td></tr>
+</table><p>
+</body>
+</html>

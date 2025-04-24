@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [API-Automation-Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="API BAT&#039;s(failed)">
+    <classes>
+      <class name="Price_APIs.POST_Price_Landing_page_new_Report_API">
+        <methods>
+          <include name="setup"/>
+          <include name="Test_POST_Price_Landing_page_new_Report_API"/>
+        </methods>
+      </class> <!-- Price_APIs.POST_Price_Landing_page_new_Report_API -->
+      <class name="Price_APIs.POST_Price_Custom_Report_Creation_API">
+        <methods>
+          <include name="setup"/>
+          <include name="Test_POST_Price_Custom_Report_Creation_API"/>
+        </methods>
+      </class> <!-- Price_APIs.POST_Price_Custom_Report_Creation_API -->
+      <class name="Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API">
+        <methods>
+          <include name="setup"/>
+          <include name="Test_POST_Price_Detailed_Scenario_POST_URL_API"/>
+        </methods>
+      </class> <!-- Price_APIs.POST_Price_Scenario_Summary_Actions_Recalculate_API -->
+      <class name="Price_APIs.POST_Price_New_Scenario_Edit_Rules_API">
+        <methods>
+          <include name="setup"/>
+          <include name="Test_POST_Price_New_Scenario_Edit_Rules_API"/>
+        </methods>
+      </class> <!-- Price_APIs.POST_Price_New_Scenario_Edit_Rules_API -->
+      <class name="Price_APIs.POST_Price_New_Scenario_edit_rules_save_API">
+        <methods>
+          <include name="Test_POST_Price_New_Scenario_edit_rules_save_API"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Price_APIs.POST_Price_New_Scenario_edit_rules_save_API -->
+      <class name="Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API">
+        <methods>
+          <include name="Test_POST_Landing_Page_Context_Menu_Price_update_API"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Price_APIs.POST_Landing_Page_Context_Menu_Price_update_API -->
+    </classes>
+  </test> <!-- API BAT's(failed) -->
+</suite> <!-- Failed suite [API-Automation-Suite] -->

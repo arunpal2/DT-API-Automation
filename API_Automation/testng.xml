@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API-Automation-Suite" parallel="tests" thread-count="3">
+    <test name="API BAT's">
+        <classes>
+
+			<!--  Platform API (24)  -->
+			<!--<class name="Platform_APIs.Platform_Application_API"/>
+            <class name="Platform_APIs.Platform_Address_API"/>
+            <class name="Platform_APIs.Platform_AppInstanceLocationDts_API"/>       
+            <class name="Platform_APIs.Platform_Audit_API"/>
+            <class name="Platform_APIs.Platform_Countries_API"/>
+            <class name="Platform_APIs.Platform_Dashboard_Page_New_Shell_Usermenus"/>
+            <class name="Platform_APIs.Platform_Dashboard_Page_Userapps"/>
+             <class name="Platform_APIs.Platform_Dashboard_Page_Usermenus"/>
+            <class name="Platform_APIs.Platform_InstanceRoles_API"/>
+            <class name="Platform_APIs.Platform_Notes_API"/>
+            <class name="Platform_APIs.Platform_Notifications_API"/>
+            <class name="Platform_APIs.Platform_NotificationStatus_API"/>
+            <class name="Platform_APIs.Platform_OrganizationExtDts_API"/>
+            <class name="Platform_APIs.Platform_Organizations_API"/>
+             <class name="Platform_APIs.Platform_Partners_API"/>
+            <class name="Platform_APIs.Platform_PartnerUsers_API"/>
+            <class name="Platform_APIs.Platform_PasswordPolicies_API"/>
+            <class name="Platform_APIs.Platform_Phones_API"/>
+            <class name="Platform_APIs.Platform_Profile_API"/>
+            <class name="Platform_APIs.Platform_Regions_API"/>
+            <class name="Platform_APIs.Platform_Roles_API"/>        
+            <class name="Platform_APIs.Platform_SuiteDts_API"/>
+            <class name="Platform_APIs.Platform_Users_API"/>
+ 			<class name="Platform_APIs.Platform_Instances_API"/>-->
+ 			
+ 			<!--  Price API (10)  -->
+			<!--<class name="Price_APIs.Action_Compare_scenarios_API"/>
+            <class name="Price_APIs.Landing_page_widget_broken_API"/>
+            <class name="Price_APIs.Landing_page_widget_config_API"/>       
+            <class name="Price_APIs.Landing_page_widget_Count_Model_Health_API"/>
+            <class name="Price_APIs.Landing_pending_delete_report_API"/>
+            <class name="Price_APIs.Landing_scenario_report_API"/>
+            <class name="Price_APIs.Scenario_Summay_get_action_list_API"/>
+            <class name="Price_APIs.Scenario_Summay_get_financial_forecast_widget_API"/>
+            <class name="Price_APIs.Scenario_Summay_get_log_API"/>
+            <class name="Price_APIs.Scenario_Summay_get_report_API"/>-->
+            
+            
+            <!--  Openlink API (10)  -->
+			<!--<class name="Openlink_APIs.Openlink_getAllProductCategoryList_API"/>
+            <class name="Openlink_APIs.Openlink_getAutoRemodelVariableConfigList_API"/>
+            <class name="Openlink_APIs.Openlink_getCategoryIDList_API"/>       
+            <class name="Openlink_APIs.Openlink_getSelectedProductCategoryList_API"/>
+            <class name="Openlink_APIs.Openlink_getTLogImportReport_API"/>
+            <class name="Openlink_APIs.Openlink_getUnselectedProductCategoryList_API"/>
+            <class name="Openlink_APIs.Openlink_getVariableList_API"/>
+            <class name="Openlink_APIs.Openlink_hasAllCategoriesVariableConfig_API"/>
+            <class name="Openlink_APIs.Openlink_runPIFExport_API"/>
+            <class name="Openlink_APIs.Openlink_runPIFImport_API"/>-->
+            
+             <!--  Openlink API (10)  -->
+			<!--<class name="Promotion_APIs.Promotion_changeVisibilityOfPromotion_API"/>
+            <class name="Promotion_APIs.Promotion_Delete_API"/>
+            <class name="Promotion_APIs.Promotion_deletePromotionGroup_API"/>       
+            <class name="Promotion_APIs.Promotion_doPastDataValidation_API"/>
+            <class name="Promotion_APIs.Promotion_Duplicate_API"/>
+            <class name="Promotion_APIs.Promotion_dupMoveValidationSave_API"/>
+            <class name="Promotion_APIs.Promotion_getDeletePromoConfirmation_API"/>
+            <class name="Promotion_APIs.Promotion_getDuplicatePromoName_API"/>
+            <class name="Promotion_APIs.Promotion_mgr_API"/>
+            <class name="Promotion_APIs.Promotion_Validation_API"/>-->
+
+            
+        </classes>
+    </test>
+</suite>
